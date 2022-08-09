@@ -1,0 +1,31 @@
+name: Training
+type: theme
+base theme: false
+description: 'This theme for Tarining Purpose'
+package: Other
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - training/global-styling
+
+regions:
+        header: Header
+        social_icon: Social Icon
+        search: 'Header Search'
+        main_menu: 'Main Menu'
+        main_slider: 'Main Slider'
+        help: Help
+        content: 'Content'
+        breadcrumb: 'breadcrumb'
+        first_mid_section: 'First Mid Section'
+        second_mid_section: 'Second Mid Section'
+        testimonial_slider: 'Testimonial Slider'
+        currency_calculation: 'Currency Calculation'
+        service_section: 'Service Section'
+        news_event: 'News and Event'
+        contact_us: 'Contact Us'
+        footer_slider: 'Footer Slider Section'
+        footer_first: 'Footer First'
+        footer_second: 'Footer Second'
+        footer_third: 'Footer Third'
+        footer_bootom: 'Footer Bottom'
