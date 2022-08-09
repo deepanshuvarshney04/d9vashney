@@ -1,0 +1,18 @@
+uuid: 0cca95ba-c3f5-4fcf-a08e-6c764e91cf8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Assignment6
+type: assignment6
+description: 'add/edit/delete assignment6'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

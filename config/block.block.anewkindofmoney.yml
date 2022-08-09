@@ -1,0 +1,25 @@
+uuid: 6c104364-6d90-4d4a-a5d4-0e9a8baf0d62
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d8d309d-c4a6-47ce-9e63-9f4cb802c3d7'
+  module:
+    - block_content
+  theme:
+    - training
+id: anewkindofmoney
+theme: training
+region: first_mid_section
+weight: 0
+provider: null
+plugin: 'block_content:3d8d309d-c4a6-47ce-9e63-9f4cb802c3d7'
+settings:
+  id: 'block_content:3d8d309d-c4a6-47ce-9e63-9f4cb802c3d7'
+  label: 'A new kind of money'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

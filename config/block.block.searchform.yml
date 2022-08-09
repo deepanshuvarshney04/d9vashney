@@ -1,0 +1,21 @@
+uuid: 8750185b-18e6-49ca-80c5-2cfc1d587b6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - training
+id: searchform
+theme: training
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

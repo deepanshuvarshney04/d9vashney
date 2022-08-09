@@ -1,0 +1,25 @@
+uuid: 28d71ae7-8c46-4a09-bc30-3e5d41f27cca
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:49e77ff1-be86-4070-829b-b03f0766205f'
+  module:
+    - block_content
+  theme:
+    - training
+id: socialicon
+theme: training
+region: social_icon
+weight: 0
+provider: null
+plugin: 'block_content:49e77ff1-be86-4070-829b-b03f0766205f'
+settings:
+  id: 'block_content:49e77ff1-be86-4070-829b-b03f0766205f'
+  label: 'Social Icon'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 07ee32e8-ecab-4586-9fb0-09f93868ac95
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_1200x800
+label: 'Landscape 1200X800'
+effects:
+  b30e60fc-5b83-4a12-a836-76586100ac8d:
+    uuid: b30e60fc-5b83-4a12-a836-76586100ac8d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 800
+      anchor: center-center

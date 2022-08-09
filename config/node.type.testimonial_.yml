@@ -1,0 +1,17 @@
+uuid: b81bfb96-0c20-4a04-b1e5-cc8dcadf3a6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Testimonial
+type: testimonial_
+description: 'Testimonials let people talk about us.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

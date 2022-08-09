@@ -1,0 +1,22 @@
+uuid: 9104b28c-48b7-434c-84f4-fbf578bc4597
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - training
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: training_help
+theme: training
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 093c5e61-40d6-43b2-96d1-d0d77e4b1cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_main_slider_
+  module:
+    - views
+  theme:
+    - training
+id: views_block__home_page_main_slider__block_1
+theme: training
+region: main_slider
+weight: -8
+provider: null
+plugin: 'views_block:home_page_main_slider_-block_1'
+settings:
+  id: 'views_block:home_page_main_slider_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

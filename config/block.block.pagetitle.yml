@@ -1,0 +1,18 @@
+uuid: 86eed840-9c6f-4b80-8aeb-28eb11e6fa94
+langcode: en
+status: true
+dependencies:
+  theme:
+    - training
+id: pagetitle
+theme: training
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

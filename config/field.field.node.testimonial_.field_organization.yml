@@ -1,0 +1,19 @@
+uuid: 6b3414fa-1218-4303-80d8-113fcc4c9b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization
+    - node.type.testimonial_
+id: node.testimonial_.field_organization
+field_name: field_organization
+entity_type: node
+bundle: testimonial_
+label: Organization
+description: 'What organization is writing this testimonial?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

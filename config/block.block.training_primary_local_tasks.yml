@@ -1,0 +1,22 @@
+uuid: 90da4d94-0abb-415e-b7ff-385f80ca3c69
+langcode: en
+status: false
+dependencies:
+  theme:
+    - training
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: training_primary_local_tasks
+theme: training
+region: header
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
