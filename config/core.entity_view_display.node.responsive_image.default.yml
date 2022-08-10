@@ -1,0 +1,40 @@
+uuid: a1679625-f84d-4624-b6a4-ab383e0bcf8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.responsive_image.body
+    - field.field.node.responsive_image.field_responsive_image
+    - node.type.responsive_image
+    - responsive_image.styles.resmposive_image_style
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.responsive_image.default
+targetEntityType: node
+bundle: responsive_image
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_responsive_image:
+    type: responsive_image
+    label: above
+    settings:
+      responsive_image_style: resmposive_image_style
+      image_link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

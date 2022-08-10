@@ -1,0 +1,25 @@
+uuid: a743287c-a9aa-42c2-b26f-7cdfe484e9e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.landscape_1200x800
+    - image.style.portrait_600x800
+    - image.style.thumbnail
+  theme:
+    - training
+id: resmposive_image_style
+label: 'Responsive Image Style'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_600x800
+    breakpoint_id: training.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_1200x800
+    breakpoint_id: training.desktop
+    multiplier: 1x
+breakpoint_group: training
+fallback_image_style: thumbnail

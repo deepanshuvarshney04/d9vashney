@@ -1,0 +1,23 @@
+uuid: 3baabba9-7de5-4cc7-92b4-92195d1905be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.responsive_image
+  module:
+    - text
+id: node.responsive_image.body
+field_name: body
+entity_type: node
+bundle: responsive_image
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

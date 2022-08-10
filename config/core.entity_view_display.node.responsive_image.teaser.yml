@@ -1,0 +1,32 @@
+uuid: 485dceb4-b72f-4903-b2dd-e81b8d3e1d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.responsive_image.body
+    - field.field.node.responsive_image.field_responsive_image
+    - node.type.responsive_image
+  module:
+    - text
+    - user
+id: node.responsive_image.teaser
+targetEntityType: node
+bundle: responsive_image
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_responsive_image: true

@@ -1,0 +1,17 @@
+uuid: 20fa12f6-8ec9-4468-a41e-f3c6c4c2d269
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Responsive Image'
+type: responsive_image
+description: 'This Content-Type is used for showing images responsive according to the screen.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
