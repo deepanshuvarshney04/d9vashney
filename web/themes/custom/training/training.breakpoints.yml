@@ -1,0 +1,12 @@
+training.desktop:
+  label: Landscape
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 1
+  multipliers:
+    - 1x
+training.small:
+  label: Portrait
+  mediaQuery: 'all and (max-width: 991px)'
+  weight: 2
+  multipliers:
+    - 1x

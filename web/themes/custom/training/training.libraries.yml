@@ -5,9 +5,12 @@ global-styling:
       css/style.css: {}
       css/bootstrap.min.css: {}
       css/bootstrap.css: {}
+      css/flexslider.css: {}
   js:
     js/main.js: {}
     js/bootstrap.bundle.js: {}
     js/bootstrap.bundle.min.js: {}
+    js/jquery.flexslider-min.js: { minified: true }
+    js/jquery.flexslider.js: {}
   dependencies:
     - core/jquery
