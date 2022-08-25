@@ -21,9 +21,16 @@ function training_preprocess_page(&$variables)
   // $variables['today'] = $temp->format('H:i, m-d-Y');
 }
 
-function training_form_search_block_form_alter(&$form, &$form_state, $form_id)
+function training_form_alter(&$form, &$form_state, $form_id)
 {
-  $form['keys']['#attributes']['placeholder'] = t('Keywords');
+  if ($form_id == 'search_block_form') {
+    $form['keys']['#attributes']['placeholder'] = t('KEYWORD');
+    $form['actions']['submit']['#value'] = html_entity_decode('&#xf002;');
+    $form['actions']['submit']['#attributes']['class'][] = 'fas fa-search';
+  }
+  /* if ($form_id == 'webform_submission_newsletter_add_form') {
+    $form['actions']['submit']['#value'] = html_entity_decode('&#xf0e0;');
+  } */
 }
 
 /* function training_preprocess_node__assignment6(&$variables) {

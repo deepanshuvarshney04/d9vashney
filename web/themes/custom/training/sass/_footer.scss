@@ -1,0 +1,172 @@
+.footer {
+    padding: 40px 0;
+    background-color: #333333;
+    color: #919899;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../images/texture.png);
+
+    .logo-footer {
+        text-align: center;
+    }
+
+    .block-views-blocknews-and-events-slider-block-2 {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .event-footer {
+
+            /* margin: 20px 0; */
+            .news-title {
+                padding: 10px 0;
+            }
+
+            .new-des {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & div {
+                    margin: 0 11px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 700;
+
+                    @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+                        margin: 0 10px;
+                    }
+                }
+
+                & i {
+                    font-family: 'FontAwesome';
+                    color: #9A354B;
+                    padding-right: 3px;
+                }
+            }
+        }
+    }
+
+    .footer-mid {
+        text-align: center;
+
+        #block-footercotactus {
+            h3 {
+                color: #ffffff;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 25px;
+                margin-top: 10px;
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+
+            .footer-add {
+                color: #ffffff;
+                letter-spacing: 0.2em;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 30px;
+
+                a {
+                    color: #FAB92E;
+                }
+            }
+
+            .footer-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+
+                li {
+                    a {
+                        margin-right: 10px;
+                        text-decoration: none;
+                        margin-bottom: 4px;
+                        margin-top: 15px;
+                    }
+
+                    @include sociallogo(#ffffff);
+                }
+            }
+        }
+    }
+
+    .news-letter {
+        #block-webform-3 h2 {
+            /* margin: 90px 0; */
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .webform-submission-newsletter-form {
+            .newsletter-form-block {
+                position: relative;
+
+                .js-form-type-email {
+                    input[type=email] {
+                        width: 100%;
+                        border-radius: 33px;
+                        border: none;
+                        padding: 6px 8px;
+
+                        &::placeholder {
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            padding-left: 20px;
+                        }
+                    }
+                    .field-suffix{
+                        position: absolute;
+                        top: 6px;
+                        right: 20px;
+                        i{
+                        font-family: 'FontAwesome';
+                        color: #C03C57;
+                        }
+                    }
+                }
+
+                .form-input-field {
+                    position: absolute;
+                    top: -10px;
+                    right: 15px;
+
+                    .form-actions {
+                        input[type=submit] {
+                            background: transparent;
+                            border: none;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #ffffff;
+    color: #808080;
+
+    .footer-text {
+        margin: 30px 0;
+        letter-spacing: 0.3rem;
+        font-weight: 600;
+    }
+}

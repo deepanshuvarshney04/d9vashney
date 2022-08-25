@@ -37,6 +37,13 @@
 
 <div class="page-wrapper">
   {% include '@training/includes/header.html.twig' %}
+  {% if page.breadcrumb %}
+  <div class="featured-top">
+    <aside class="featured-top__inner section layout-container clearfix" role="complementary">
+      {{ page.breadcrumb }}
+    </aside>
+  </div>
+  {% endif %}
   {% if page.highlighted %}
   <div class="highlighted">
     <aside class="layout-container section clearfix" role="complementary">
@@ -44,18 +51,12 @@
     </aside>
   </div>
   {% endif %}
-  {% if page.featured_top %}
-  <div class="featured-top">
-    <aside class="featured-top__inner section layout-container clearfix" role="complementary">
-      {{ page.featured_top }}
-    </aside>
-  </div>
-  {% endif %}
-
-  <section class="section">
-    <div class="main-content">
-    <a id="main-content" tabindex="-1"></a>
-    {{ page.content }}
+  <section class="content-section">
+    <div class="container">
+      <div class="main-content">
+        <a id="main-content" tabindex="-1"></a>
+        {{ page.content }}
+      </div>
     </div>
   </section>
 

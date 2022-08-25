@@ -1,12 +1,13 @@
 name: Training
 type: theme
-base theme: false
+base theme: classy
 description: 'This theme for Tarining Purpose'
 package: Other
 core_version_requirement: ^8 || ^9
-
 libraries:
   - training/global-styling
+
+
 
 regions:
         header: Header
@@ -15,6 +16,7 @@ regions:
         main_menu: 'Main Menu'
         main_slider: 'Main Slider'
         help: Help
+        highlight: 'Highlight'
         content: 'Content'
         breadcrumb: 'breadcrumb'
         first_mid_section: 'First Mid Section'

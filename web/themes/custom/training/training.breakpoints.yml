@@ -1,13 +1,18 @@
 training.desktop:
   label: Landscape
   mediaQuery: 'all and (min-width: 992px)'
-  weight: 1
+  weight: -1
   multipliers:
     - 1x
 training.small:
-  label: Portrait
+  label: Tablet
   mediaQuery: 'all and (max-width: 991px)'
-  weight: 2
+  weight: -2
   multipliers:
-    - 1.5x
-    - 2.0X
+    - 1x
+training.mobile:
+  label: Mobile
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: -3
+  multipliers:
+    - 1x

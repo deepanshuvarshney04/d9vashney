@@ -1,0 +1,161 @@
+/* Start Main Navigation */
+.header-menu {
+    border-top: 1px ridge;
+    border-bottom: 1px solid black;
+    padding: 3px 0 3px;
+    @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        border-top: none;
+        padding: 0;
+    }
+
+    ul.nav {
+        @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+            margin: 0;
+            display: none;
+            position: fixed;
+            overflow: auto;
+            background-color: #333333;
+            padding: 20px 20px 20px 10px;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            z-index: 999;
+            text-align: left;
+            transition: all 2s ease-in-out;
+            &.active{
+                opacity: 1;
+                right: 15px;
+                display: block;
+                animation: fade .5s;
+            }
+        }
+        li {
+            @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+                display: block;
+                margin: 0;
+                padding-right: 3.5rem;
+                width: 100%;
+                transition: background-color .5s;
+            }
+            &.active{
+                color: #bf3654
+            }
+            a {
+                color: #3A3A3A;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 1.5rem 1rem;
+                letter-spacing: 0.1rem;
+                &.is-active{
+                    color: #bf3654;
+                }
+                &:hover{
+                    color: #fab915;
+                }
+                @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+                    color: #ffffff;
+                    position: relative;
+                    display: block;
+                    padding: 10px 15px;
+                    transition: all 1s;
+                }
+            }
+        }
+
+        span {
+            color: #3A3A3A;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 1.5rem 1rem;
+            letter-spacing: 0.1rem;
+            @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+                color: #ffffff;
+                padding: 10px 15px;
+            }
+        }
+    }
+    @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        @keyframes fade {
+            from {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+}
+/* End Main Navigation */
+
+/* Mobile Menu Toggle Button CSS Start Here */
+@media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+    .top-header {
+        .hamburger {
+            position: fixed;
+            top: 0px;
+            left: auto;
+            right: 0px;
+            padding: 15px;
+            margin: 0;
+            z-index: 10;
+            background-color: #ffffff;
+            transition: opacity .3s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .line {
+                width: 37px;
+                height: 2px;
+                margin: 8px auto;
+                transition: all 0.3s ease-in-out;
+                border-radius: 5px;
+
+                &:nth-child(1) {
+                    background-color: #333333;
+                }
+
+                &:nth-child(2) {
+                    background-color: #333333;
+                }
+
+                &:nth-child(3) {
+                    background-color: #333333;
+                }
+            }
+
+            &.isactive {
+                background-color: #333333;
+                border: none;
+                left: auto;
+                top: 0px;
+                right: 0px;
+                padding: 15px;
+                position: fixed;
+                margin: 0;
+                z-index: 3000;
+
+                .line:nth-child(2) {
+                    opacity: 0;
+                    background-color: #ffffff;
+                }
+
+                .line:nth-child(1) {
+                    transform: translateY(10px) rotate(45deg);
+                    background-color: #ffffff;
+                }
+
+                .line:nth-child(3) {
+                    transform: translateY(-10px) rotate(-45deg);
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile Menu Toggle Button CSS End Here */

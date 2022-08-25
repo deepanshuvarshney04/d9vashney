@@ -4,13 +4,14 @@ global-styling:
     theme:
       css/style.css: {}
       css/bootstrap.min.css: {}
-      css/bootstrap.css: {}
       css/flexslider.css: {}
+      css/owl.carousel.min.css: {}
+      css/owl.theme.default.min.css: {}
   js:
     js/main.js: {}
-    js/bootstrap.bundle.js: {}
     js/bootstrap.bundle.min.js: {}
     js/jquery.flexslider-min.js: { minified: true }
     js/jquery.flexslider.js: {}
+    js/owl.carousel.min.js: {}
   dependencies:
     - core/jquery

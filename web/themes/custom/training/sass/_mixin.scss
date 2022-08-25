@@ -1,0 +1,57 @@
+@mixin socialicon($pad1, $pad2) {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0 0 2px #888;
+    padding: $pad1 $pad2;
+}
+
+@mixin sociallogo ($hovcolor) {
+    a.fa-facebook-f {
+        @include socialicon(10px, 13px);
+        color: #507CBD;
+        &:hover{
+            background-color: #507cbe;
+            color: $hovcolor;
+        }
+    }
+
+    a.fa-twitter {
+        @include socialicon(10px, 10px);
+        color: #2BB3F0;
+        &:hover{
+            background-color: #00abef;
+            color: $hovcolor;
+        }
+    }
+
+    a.fa-google {
+        @include socialicon(10px, 10px);
+        color: #D73825;
+        &:hover{
+            background-color: #D73825;
+            color: $hovcolor;
+        }
+    }
+
+    a.fa-linkedin-in {
+        @include socialicon(10px, 10px);
+        color: #668FC7;
+        &:hover{
+            background-color: #668FC7;
+            color: $hovcolor;
+        }
+    }
+
+    a.fa-youtube {
+        @include socialicon(10px, 10px);
+        color: #D23523;
+        &:hover{
+            background-color: #D23523;
+            color: $hovcolor;
+        }
+    }
+
+    span{
+        display: none;
+    }
+}

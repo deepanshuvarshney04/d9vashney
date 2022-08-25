@@ -44,40 +44,92 @@
     </div>
     {% endif %}
     {% if page.first_mid_section %}
-    <div class="bitcoin-section">
-        <img src="{{ base_path~directory }}/images/about.jpeg"/>
-        {{ page.first_mid_section }}
-    </div>
+    <section class="bitcoin-section">
+        <div class="container">
+            <div class="bit-main">
+                <div class="row">
+                    <div class="bit-content">
+                        <div class="col-sm-12 col-md-6 col-lg-5 bit-des">
+                            {{ page.first_mid_section }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {% endif %}
     {% if page.second_mid_section %}
-    <div class="second-info">
-        {{ page.second_mid_section }}
-    </div>
+    <section class="second-info">
+        <div class="container">
+            <div class="row">
+                {{ page.second_mid_section }}
+            </div>
+        </div>
+    </section>
     {% endif %}
     {% if page.testimonial_slider %}
-    <div class="testimonial-slider">
-        {{ page.testimonial_slider }}
+    <div class="container">
+        <div class="testimonial-slider">
+            {{ page.testimonial_slider }}
+        </div>
     </div>
     {% endif %}
     {% if page.currency_calculation %}
-    <div class="currency-section">
-        {{ page.currency_calculation }}
-    </div>
+    <section class="currency-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-5">
+                    <div class="form-section">
+                        {{ page.currency_calculation }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {% endif %}
     {% if page.service_section %}
-    <div class="service-section">
-        {{ page.service_section }}
-    </div>
+    <section class="service-section">
+        <div class="container">
+            <div class="service-content">
+                {{ page.service_section }}
+            </div>
+        </div>
+    </section>
     {% endif %}
     {% if page.news_event %}
-    <div class="news-event">
-        {{ page.news_event }}
-    </div>
+    <section class="news-event">
+        <div class="container">
+            <div class="blog-heading">{{ 'Our Blog'|t }}</div>
+            {{ page.news_event }}
+        </div>
+    </section>
     {% endif %}
     {% if page.contact_us %}
-    <div class="contact-us">
-        {{ page.contact_us }}
-    </div>
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-form">
+                <div class="contactus-heading">{{ 'Get a'|t }}</div>
+                {{ page.contact_us }}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    {% if page.footer_slider %}
+    <section class="footer-slider">
+        <div class="container-fluid">
+            <div class="footer-pad">
+                <div class="row">
+                    {{ page.footer_slider }}
+                </div>
+            </div>
+        </div>
+    </section>
     {% endif %}
     {% include '@training/includes/footer.html.twig' %}
+    <section class="footer-bottom">
+        <div class="container">
+            <p class="text-center footer-text">© {{ 'Copyright'|t }} {{ "now"|date("Y") }}. {{ 'All Rights Reserved.'|t }}</p>
+        </div>
+    </section>
+    <div id="stop" class="scrollTop" style="opacity: 1;">top</div>
 </div>

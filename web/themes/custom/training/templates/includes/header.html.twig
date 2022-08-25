@@ -8,29 +8,36 @@
 #}
 
 <header class="header">
-    <div class="container">
-        <div class="row header-top">
-            {% if page.social_icon %}
-            <div class="col-lg-4 col-sm-12 social-img">
-                {{ page.social_icon }}
+    <section class="top-header">
+        <div class="container">
+            <div class="row header-top">
+                <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 site-logo">
+                    <a href="{{ url('<front>') }}" title="{{ site_name }}">
+                        <img class="img-fluid" src="{{ logopath }}" title="{{ site_name }}" alt="logo" />
+                    </a>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                {% if page.social_icon %}
+                <div class="col-lg-4 col-md-6 col-sm-12 order-lg-1 order-md-2 social-img">
+                    {{ page.social_icon }}
+                </div>
+                {% endif %}
+                {% if page.search %}
+                <div class="col-lg-4 col-sm-12 col-md-6 order-lg-3 order-md-3 search-sec">
+                    {{ page.search }}
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
-            <div class="col-lg-4 col-sm-12 site-logo">
-                <a href="{{ url('<front>') }}" title="{{ site_name }}">
-                    <img src="{{ logopath }}" title="{{ site_name }}" alt="logo" />
-                </a>
-            </div>
-            {% if page.search %}
-            <div class="col-lg-4 col-sm-12 search-sec">
-                {{ page.search }}
-            </div>
-            {% endif %}
         </div>
-    </div>
+    </section>
     {% if page.main_menu %}
     <div class="header-menu">
         <div class="container">
-        {{ page.main_menu }}
+            {{ page.main_menu }}
         </div>
     </div>
     {% endif %}

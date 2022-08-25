@@ -1,0 +1,90 @@
+.top-header .header-top {
+    display: flex;
+    align-items: center;
+    padding: 9px 0 28px;
+
+    @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+        padding: 0;
+    }
+
+    .site-logo {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+
+        a img {
+            @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .social-img {
+        display: flex;
+        margin-top: 28px;
+        justify-content: flex-start;
+
+        @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+            justify-content: center;
+        }
+    }
+
+    .search-sec {
+        display: flex;
+        margin-top: 17px;
+        justify-content: center;
+
+        @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+            display: none;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+        }
+
+        .js-form-type-search input[type=search] {
+            padding: 10px 32px;
+            width: 100%;
+            background-color: #f5f5f5;
+            border: 0px;
+            border-radius: 33px;
+            font-size: 13px;
+        }
+
+        .form-actions input[type=submit] {
+            background-size: 15px;
+            font-family: 'FontAwesome';
+            background-position: 100%;
+            background-color: #f5f5f5;
+            border: 0px;
+            border-radius: 33px;
+            padding: 28px 10px;
+            font-size: 13px;
+            margin-left: 10px;
+            transform: rotate(90deg);
+            color: #C2405C;
+        }
+    }
+
+    ul.actions {
+        display: flex;
+        justify-content: start;
+
+        @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+            padding-left: 15px;
+        }
+
+        li {
+            a {
+                margin-right: 10px;
+                text-decoration: none;
+            }
+
+            @include sociallogo(#ffffff);
+        }
+    }
+
+}
+
+/* end of header section */

@@ -25,7 +25,15 @@
         "drupal/fontawesome": "^2.23",
         "drupal/flexslider": "^2.0",
         "drupal/devel": "^4.1",
-        "kint-php/kint": "^4.1"
+        "kint-php/kint": "^4.1",
+        "drupal/webform": "^6.1",
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/fivestar": "^1.0@alpha",
+        "drupal/markup": "^1.0@beta",
+        "drupal/slick": "^2.6",
+        "drupal/simplenews": "^3.0@beta",
+        "drupal/pathauto": "^1.11",
+        "drupal/easy_breadcrumb": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
