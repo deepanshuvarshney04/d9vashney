@@ -17,11 +17,21 @@ gulp.task('imagemin', function () {
         }))
         .pipe(gulp.dest('./themes/custom/tarining/images'));
 });
+// gulp.task('sass', function () {
+//     return gulp.src('./sass/**/*.scss')
+//         .pipe(sass({outputStyle: 'uncompressed'}).on('error', sass.logError))
+//         .pipe(gulp.dest('./css'));
+// });
+
 gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
-        .pipe(sass({outputStyle: 'uncompressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
-});
+    gulp.src('./sass/**/*.scss')
+      .pipe(sourcemaps.init())
+          .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+          .pipe(autoprefixer('last 2 version'))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest('./css'));
+  });
+
 gulp.task('uglify', function() {
   gulp.src('./themes/custom/training/js/*.js')
     .pipe(uglify('main.js'))
