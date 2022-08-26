@@ -23,14 +23,16 @@ gulp.task('imagemin', function () {
 //         .pipe(gulp.dest('./css'));
 // });
 
-gulp.task('sass', function () {
+
+gulp.task('sass', done => {
     gulp.src('./sass/**/*.scss')
-      .pipe(sourcemaps.init())
-          .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-          .pipe(autoprefixer('last 2 version'))
-      .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./css'));
-  });
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        //.pipe(autoprefixer('last 2 version'))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./css'));
+    done();
+});
 
 gulp.task('uglify', function() {
   gulp.src('./themes/custom/training/js/*.js')
